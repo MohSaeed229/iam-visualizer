@@ -52,7 +52,7 @@ The diagram was created using [Cloudcraft](https://www.cloudcraft.co/), a visual
 ## 🔗 Live URL
 
 Access the deployed website through CloudFront:  
-[https://YOUR-DISTRIBUTION-ID.cloudfront.net](https://YOUR-DISTRIBUTION-ID.cloudfront.net)
+[https://E18BUDI20PZFAR.cloudfront.net](https://YOUR-DISTRIBUTION-ID.cloudfront.net)
 
 ---
 
