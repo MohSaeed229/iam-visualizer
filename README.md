@@ -30,12 +30,22 @@ A simple frontend-only site designed to showcase IAM visualizations. It’s buil
 
 ---
 
+## 🧠 Architecture Overview
+
+The architecture showcases a CI/CD pipeline for deploying a static website to Amazon S3 using GitHub Actions. The developer pushes code to GitHub, which triggers an automated deployment workflow. The workflow uses IAM credentials stored securely as GitHub Secrets to sync files to an S3 bucket configured for static website hosting in the `us-east-1` region. CloudFront, acting as a CDN, fetches content from the S3 bucket and serves it to users via a globally distributed HTTPS endpoint. This setup ensures fast delivery, secure access, and automatic deployment on every code change.
+
+The diagram was created using [Cloudcraft](https://www.cloudcraft.co/), a visual tool designed specifically for AWS architecture planning.
+
+![Architecture Diagram](assets/Capstone%20Project%20Architecture.png)
+
+---
+
 ## ⚙️ AWS Services Used
 
-- **Amazon S3** – Static site hosting
-- **Amazon CloudFront** – Content Delivery Network
-- **GitHub Actions** – Continuous deployment pipeline
-- **IAM** – Permissions for GitHub deployment user
+- **Amazon S3** – Static site hosting  
+- **Amazon CloudFront** – Content Delivery Network  
+- **GitHub Actions** – Continuous deployment pipeline  
+- **IAM** – Permissions for GitHub deployment user  
 
 ---
 
